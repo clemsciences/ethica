@@ -7,7 +7,7 @@ import re
 import matplotlib.pyplot as plt
 import networkx as nx
 
-from data import load_text
+from ethica_model.data import load_text
 
 
 class Text:

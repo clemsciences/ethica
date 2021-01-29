@@ -12,6 +12,8 @@ import codecs
 import os
 import requests
 
+from ethica_model import MODEL_DIR
+
 
 def retrieve_texts():
     core_link = "https://raw.githubusercontent.com/cltk/lat_text_latin_library/master/"
@@ -26,8 +28,8 @@ def retrieve_texts():
 
 def load_text():
     chapters = []
-    for filename in os.listdir("text"):
-        with codecs.open(os.path.join("text", filename), "r", encoding="utf-8") as f:
+    for filename in os.listdir(os.path.join(MODEL_DIR, "text")):
+        with codecs.open(os.path.join(MODEL_DIR, "text", filename), "r", encoding="utf-8") as f:
             chapter = f.read()
             chapters.append(chapter)
     return chapters

@@ -1,6 +1,6 @@
 
 
-from model import Text
+from ethica_model.model import Text
 
 
 def script():

@@ -11,7 +11,7 @@ Vue.use(BootstrapVue)
 
 Vue.config.productionTip = false
 
-axios.defaults.baseURL = "http://localhost:5010";
+axios.defaults.baseURL = process.env.VUE_APP_SITE_API_URL;
 
 new Vue({
   render: h => h(App),

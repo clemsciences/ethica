@@ -6,12 +6,12 @@ from flask import jsonify
 
 from ethica_model import data
 from ethica_model import model
-from ethica_server import create_app
+from ethica_server import create_app, ethica
 
 app = create_app()
 
 
-@app.route("/load/raw-text")
+@ethica.route("/load/raw-text")
 def load_raw_text():
     chapters = data.load_text()
     res_chapters = []
@@ -20,7 +20,7 @@ def load_raw_text():
     return jsonify({"content": res_chapters})
 
 
-@app.route("/load/text")
+@ethica.route("/load/text")
 def load_text():
     text = model.Text()
     text.analyse()
@@ -38,4 +38,5 @@ def load_text():
 
 
 if __name__ == "__main__":
+    app.register_blueprint(ethica, url_prefix="/ethica")
     app.run(debug=True, port=5010)

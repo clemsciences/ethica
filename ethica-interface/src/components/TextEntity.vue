@@ -1,6 +1,7 @@
 <template>
   <div>
-    <p :style="entityStyle" @mouseover="setStyle" @mouseout="unsetStyle">
+    <p :style="entityStyle" class="text-element"
+       @mouseover="setStyle" @mouseout="unsetStyle">
       {{ entity.content}}
     </p>
   </div>
@@ -23,12 +24,12 @@ name: "TextEntity",
       switch (this.entity.entityType) {
         case "Definitio":
           this.entityStyle = {
-            'background-color': '#4bbe28',
+            'background-color': '#29708d',
           };
           break;
         case "Axioma":
           this.entityStyle = {
-            'background-color': '#4bbe28',
+            'background-color': '#61d9cf',
           };
           break;
         case "Propositio":
@@ -43,57 +44,57 @@ name: "TextEntity",
           break;
         case "Aliter":
           this.entityStyle = {
-            'background-color': '#4bbe28',
+            'background-color': '#ff6947',
           };
           break;
         case "Explicatio":
           this.entityStyle = {
-            'background-color': '#4bbe28',
+            'background-color': '#7aa06a',
           };
           break;
         case "Corollarium":
           this.entityStyle = {
-            'background-color': '#4bbe28',
+            'background-color': '#28be7d',
           };
           break;
         case "Scholium":
           this.entityStyle = {
-            'background-color': '#4bbe28',
+            'background-color': '#8e80c3',
           };
           break;
         case "Appendix":
           this.entityStyle = {
-            'background-color': '#4bbe28',
+            'background-color': '#ac7599',
           };
           break;
         case "Caput":
           this.entityStyle = {
-            'background-color': '#4bbe28',
+            'background-color': '#bc9c83',
           };
           break;
         case "Lemma":
           this.entityStyle = {
-            'background-color': '#4bbe28',
+            'background-color': '#ff8f8f',
           };
           break;
         case "Postula":
           this.entityStyle = {
-            'background-color': '#4bbe28',
+            'background-color': '#e8ff8e',
           };
           break;
         case "Praefatio":
           this.entityStyle = {
-            'background-color': '#4bbe28',
+            'background-color': '#e6ffb9',
           };
           break;
         case "Titulus":
           this.entityStyle = {
-            'background-color': '#4bbe28',
+            'background-color': '#faffa2',
           };
           break;
         case "Finis":
           this.entityStyle = {
-            'background-color': '#4bbe28',
+            'background-color': '#92b0ff',
           };
           break;
 
@@ -107,5 +108,11 @@ name: "TextEntity",
 </script>
 
 <style scoped>
+
+.text-element {
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 </style>

@@ -1,7 +1,6 @@
 <template>
   <div>
     <chapter :chapter="chapter" v-for="chapter in chapters" :key="chapter.id"/>
-
   </div>
 </template>
 

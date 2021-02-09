@@ -111,8 +111,8 @@ name: "TextEntity",
 
 .text-element {
   text-align: justify;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 </style>

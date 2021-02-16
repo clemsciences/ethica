@@ -38,5 +38,5 @@ def load_text():
 
 
 if __name__ == "__main__":
-    app.register_blueprint(ethica, url_prefix="/ethica")
+    app.register_blueprint(ethica, url_prefix="/ethica/api")
     app.run(debug=True, port=5010)

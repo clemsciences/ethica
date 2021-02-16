@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: "/ethica"
+  publicPath: process.env.VUE_APP_SITE_URL,
 };

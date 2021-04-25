@@ -7,11 +7,19 @@ __author__ = ["Clément Besnier <clem@clementbesnier.fr>", ]
 ethica = Blueprint("ethica", __name__, )
 
 
-def create_app():
+def create_app(blueprint):
     app = Flask(__name__)
-    # app.config.from_object(Config)
     app.secret_key = "ethica"
 
-    app.register_blueprint(ethica, url_prefix="/ethica")
+    app.register_blueprint(blueprint, url_prefix="/ethica")
+
+    return app
+
+
+def create_prod_app(blueprint):
+    app = Flask(__name__)
+    app.secret_key = "ethica"
+
+    app.register_blueprint(blueprint)
 
     return app

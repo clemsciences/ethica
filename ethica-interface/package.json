@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --dest ethica-dist",
+    "zip": "tar.exe -a -c -f ethica.zip ethica-dist",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

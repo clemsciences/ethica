@@ -1,4 +1,5 @@
 
+from flask_cors import CORS
 
 from ethica_server import create_prod_app
 from ethica_server.routes import ethica

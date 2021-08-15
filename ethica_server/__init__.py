@@ -11,7 +11,7 @@ def create_app(blueprint):
     app = Flask(__name__)
     app.secret_key = "ethica"
 
-    app.register_blueprint(blueprint, url_prefix="/ethica")
+    app.register_blueprint(blueprint)
 
     return app
 

@@ -4,7 +4,13 @@
       <b-row align-h="start">
         <h1><b>Spinozae Ethica</b></h1>
       </b-row>
+
+      <b-row>
+        <b-col><b-button to="">Text</b-button></b-col>
+        <b-col><b-button to="">Lexicon</b-button></b-col>
+    </b-row>
       <b-row align-h="center">
+        <router-view/>
         <opus-text :url="ethicaUrl"/>
       </b-row>
       <b-row align-h="start">

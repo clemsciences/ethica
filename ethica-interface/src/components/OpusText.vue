@@ -1,7 +1,12 @@
 <template>
-  <div>
-    <chapter :chapter="chapter" v-for="chapter in chapters" :key="chapter.id"/>
-  </div>
+  <b-container>
+
+    <b-row>
+    </b-row>
+    <b-row align-h="center">
+      <chapter :chapter="chapter" v-for="chapter in chapters" :key="chapter.id"/>
+    </b-row>
+  </b-container>
 </template>
 
 <script>

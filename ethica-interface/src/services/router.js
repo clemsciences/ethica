@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import OpusText from "@/components/OpusText";
 import Lexicon from "@/components/Lexicon";
+import Statistica from "@/components/Statistica";
 
 Vue.use(VueRouter);
 
